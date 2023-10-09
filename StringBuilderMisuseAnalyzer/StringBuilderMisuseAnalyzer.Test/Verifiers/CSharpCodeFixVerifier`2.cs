@@ -52,6 +52,7 @@ namespace StringBuilderMisuseAnalyzer.Test
             {
                 TestCode = source,
                 FixedCode = fixedSource,
+                MarkupOptions = MarkupOptions.TreatPositionIndicatorsAsCode
             };
 
             test.ExpectedDiagnostics.AddRange(expected);
